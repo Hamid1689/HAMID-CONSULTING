@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Call</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">HAMID CONSULTING</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html#home" class="navbar__link" id="home-page">Home</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="index.html#sign-up" class="button" id="signup">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="schedule-container">
+        <div class="schedule-form">
+            <h1>Schedule a Call</h1>
+            <form id="schedule-form">
+                <div class="form-group">
+                    <label for="date-time">Select Date and Time:</label>
+                    <input type="datetime-local" id="date-time" name="date-time" required>
+                </div>
+                <div class="form-group">
+                    <label for="call-type">Call Type:</label>
+                    <select id="call-type" name="call-type" required>
+                        <option value="consultation">Consultation</option>
+                        <option value="interview">Interview</option>
+                        <option value="meeting">Meeting</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="channel">Choose Communication Channel:</label>
+                    <select id="channel" name="channel" required>
+                        <option value="Zoom">Zoom</option>
+                        <option value="Skype">Skype</option>
+                        <option value="Phone">Phone</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn" id="schedule-btn">Schedule the Call</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Popup Message -->
+    <div id="confirmation-popup" class="confirmation-popup">
+        <div class="popup-content">
+            <p>You confirmed the call!</p>
+            <button id="ok-button" class="btn">OK</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.1"></script>
+    <script src="app.js"></script>
+</body>
+</html>

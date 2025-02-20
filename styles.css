@@ -743,3 +743,120 @@ body {
 .university .btn:hover {
     background: #d6007d;
 }
+/* General styles (match your existing styles.css) */
+.schedule-container {
+    background: #1e1e1e;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    width: 500px; 
+    max-width: 95%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.schedule-form h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* Gradient heading */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label { /* If you add labels */
+    display: block;
+    margin-bottom: 5px;
+    color: #ddd; /* Slightly lighter text for labels */
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #333; /* Darker input background */
+    color: #fff;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #9c27b0; /* Highlight on focus */
+    box-shadow: 0 0 5px rgba(156, 39, 176, 0.3); /* Subtle shadow on focus */
+}
+
+.btn {
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* Gradient button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Full width button */
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #e91e63, #f50057, #9c27b0); /* Adjusted hover gradient */
+}
+
+/* Responsive adjustments if needed */
+@media (max-width: 400px) {
+    .schedule-container {
+        padding: 20px;
+    }
+
+    .schedule-form h1 {
+        font-size: 1.5em;
+    }
+}
+/* Popup message */
+.confirmation-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 9999;
+    text-align: center;
+}
+
+.popup-content {
+    padding: 20px;
+}
+
+.popup-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.popup-content button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #45a049;
+}
